@@ -8,7 +8,7 @@ public class App {
 
         BubbleSort bubbleSort = new BubbleSort(arr);
         bubbleSort.sort();
-        //bubbleSort.print();
+        bubbleSort.print();
     }
 
 

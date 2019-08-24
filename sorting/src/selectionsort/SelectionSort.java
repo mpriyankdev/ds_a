@@ -1,34 +1,33 @@
-package bubblesort;
-
+package selectionsort;
 
 /*
-Move the biggest element at the last in every iteration
-Space Complexity : BigO(1)
-Time Complexity : BigO(n*n)
-*/
+* faster for smaller sub-arrays
+* TC : O(n*n)
+* makes less writes to the memory ,
+* */
 
-public class BubbleSort {
+public class SelectionSort {
 
     private Integer arr[];
 
-    public BubbleSort(Integer arr[]){
-
+    public SelectionSort(Integer arr[]){
         this.arr = arr;
-
     }
 
     public void sort(){
 
         for(int i=0;i<arr.length-1;i++){
-
-            for(int j=0;j<arr.length -1 -i;j++) {
-                if (arr[j] > arr[j+1]) {
-                    swap(arr , j, j+1);
+            int index = i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[j] < arr[j+1]){
+                    index = j;
                 }
+            }
+            if(index!=i){
+                swap(arr ,  index , i);
             }
 
         }
-
 
     }
 
@@ -39,15 +38,9 @@ public class BubbleSort {
         arr[j_index] = temp;
     }
 
-
-
     public void print(){
-        System.out.print("[");
         for(int i=0;i<arr.length;i++){
             System.out.print(" "+arr[i]);
         }
-        System.out.print("] ");
     }
-
-
 }
