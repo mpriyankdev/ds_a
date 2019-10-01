@@ -1,5 +1,6 @@
 package mergesort;
 
+//mostly used for sorting the reference types in java
 public class MergeSort {
 
     private int[] arr;
