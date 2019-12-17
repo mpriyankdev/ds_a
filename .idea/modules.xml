@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bitmagic/bitmagic.iml" filepath="$PROJECT_DIR$/bitmagic/bitmagic.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds_a.iml" filepath="$PROJECT_DIR$/ds_a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graphalgorithms/graphalgorithms.iml" filepath="$PROJECT_DIR$/graphalgorithms/graphalgorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting/sorting.iml" filepath="$PROJECT_DIR$/sorting/sorting.iml" />
     </modules>
   </component>
